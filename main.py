@@ -28,8 +28,10 @@ def check_high_score(score):
 def scoundrel_game():
     """Track HP for Scoundrel card game"""
     hp = 20
+    current_high = load_high_score()
     print("\n=== SCOUNDREL DUNGEON ===")
-    print("Starting HP: 20\n")
+    print("Starting HP: 20")
+    print(f"Current High Score: {current_high}")
     
     while True:
         print(f"Current HP: {hp}")
